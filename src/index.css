@@ -107,7 +107,7 @@ body {
   font-size: 15px;
   letter-spacing: 0;
   line-height: 20px;
-  text-align: right;
+  /* text-align: right; */
 }
 .card-price {
   color: #272727;
@@ -179,7 +179,6 @@ body {
 }
 .footer-shroot {
   color: #979797;
-  font-family: Almarai;
   font-size: 13px;
   font-weight: bold;
   letter-spacing: 0;
@@ -189,7 +188,6 @@ body {
 
 .footer-phone {
   color: #979797;
-  font-family: "Almarai";
   font-size: 13px;
   font-weight: bold;
   text-align: right;
@@ -200,7 +198,6 @@ body {
 /* card filter style */
 .search-count-text {
   color: #979797;
-  font-family: Almarai;
   font-size: 16px;
   font-weight: bold;
   letter-spacing: 0;
@@ -213,6 +210,7 @@ body {
   padding: 15px;
   width: 170px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  text-align: left;
 }
 
 .card-filter-item {
@@ -236,7 +234,6 @@ body {
 
 .cat-text {
   color: #979797;
-  font-family: "Almarai";
   font-size: 12px;
   font-weight: bold;
   letter-spacing: 0;
@@ -246,7 +243,6 @@ body {
 
 .cat-title {
   color: #555550;
-  font-family: Almarai;
   font-size: 14px;
   font-weight: normal;
   text-align: right;
@@ -254,7 +250,6 @@ body {
 
 .cat-rate {
   color: #ffc107;
-  font-family: "Almarai";
   font-size: 14px;
   font-weight: bold;
   letter-spacing: 0;
@@ -264,7 +259,6 @@ body {
 
 .barnd-text {
   color: #555550;
-  font-family: "Almarai";
   font-size: 18px;
   font-weight: bold;
   letter-spacing: 0;
@@ -279,7 +273,6 @@ body {
 }
 .product-description {
   color: #555550;
-  font-family: Cairo;
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 0;
@@ -294,7 +287,6 @@ body {
   padding-bottom: 10px;
   border-radius: 9px;
   color: #555550;
-  font-family: "Almarai";
   font-size: 12px;
   font-weight: bold;
   background-color: #ffffff;
@@ -308,7 +300,6 @@ body {
   border: none;
   background-color: #272727;
   color: #ffffff;
-  font-family: "Almarai";
   font-size: 14px;
   font-weight: normal;
 }
@@ -345,8 +336,7 @@ body {
 }
 
 .cat-text-header {
-  color: #979797;
-  font-family: "Almarai";
+  color: #979797;  
   font-size: 12px;
   font-weight: bold;
   letter-spacing: 0;
@@ -372,7 +362,6 @@ body {
 }
 .title-login {
   color: #555550;
-  font-family: Almarai;
   font-size: 21px;
   font-weight: 800;
   letter-spacing: 0;
@@ -396,7 +385,6 @@ body {
 /* cart page */
 .cart-title {
   color: #555550;
-  font-family: Almarai;
   font-size: 21px;
   font-weight: 800;
   letter-spacing: 0;
@@ -414,7 +402,7 @@ body {
   height: 46px;
   width: 90%;
   border: 1px solid #979797;
-  font-family: "Almarai";
+   
   font-size: 12px;
   font-weight: normal;
 }
@@ -430,7 +418,7 @@ body {
   border-radius: 0 !important;
   background-color: #272727;
   color: #ffff !important;
-  font-family: "Almarai";
+   
   font-size: 12px;
   font-weight: normal;
 }
@@ -453,8 +441,7 @@ body {
 }
 
 .admin-side-text {
-  color: #272727;
-  font-family: "Almarai";
+  color: #272727; 
   font-size: 12px;
   font-weight: bold;
   letter-spacing: 0;
@@ -472,16 +459,15 @@ body {
 }
 .admin-content-text {
   color: #555550;
-  font-family: Almarai;
   font-size: 21px;
   font-weight: 800;
   letter-spacing: 0;
   line-height: 28px;
-  text-align: right;
+  /* text-align: right; */
 }
 .item-delete-edit {
   color: #979797;
-  font-family: "Almarai";
+   
   font-size: 16px;
   letter-spacing: 0;
   line-height: 30px;
@@ -490,8 +476,7 @@ body {
 }
 
 .text-form {
-  color: #979797;
-  font-family: "Almarai";
+  color: #979797; 
   font-size: 16px;
   letter-spacing: 0;
   line-height: 20px;
@@ -553,22 +538,20 @@ body {
 }
 .rate-count {
   color: #979797;
-  font-family: "Almarai";
+   
   font-size: 12px;
   letter-spacing: 0;
   line-height: 23px;
 }
 .rate-name {
   color: #555550;
-  font-family: "Almarai";
   font-size: 14px;
   font-weight: bold;
   letter-spacing: 0;
   line-height: 19px;
 }
 .rate-description {
-  color: #555550;
-  font-family: "Almarai";
+  color: #555550; 
   font-size: 14px;
   letter-spacing: 0;
   line-height: 19px;
@@ -586,14 +569,12 @@ body {
 }
 .order-title {
   color: #272727;
-  font-family: "Almarai";
   font-size: 16px;
   font-weight: bold;
 }
 
 .stat {
   color: #979797;
-  font-family: Cairo;
   font-size: 16px;
   letter-spacing: 0;
   line-height: 30px;
@@ -634,20 +615,19 @@ body {
 
 /* filter side style */
 .filter-title {
-  color: #555550;
-  font-family: "Almarai";
-  font-size: 16px;
+  color: #555550; 
+  font-size: 18px;
   font-weight: bold;
   letter-spacing: 0;
   line-height: 20px;
-  text-align: right;
+  
 }
 .filter-sub {
-  color: #555550;
-  font-family: "Almarai";
+  color: #555550; 
   font-size: 12px;
   letter-spacing: 0;
   line-height: 17px;
   text-align: center;
+  margin-left: 5px;
 }
 /* end filter */

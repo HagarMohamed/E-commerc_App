@@ -1,7 +1,6 @@
 import React from 'react'
 import { Navbar, Container, FormControl, Nav } from 'react-bootstrap'
 import logo from '../../Images/logo2.png'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const NavBarLogin = () => {
     return (
@@ -9,7 +8,7 @@ const NavBarLogin = () => {
             <Container>
                 <Navbar.Brand>
                     <a href='/'>
-                        <img src={logo} className='logo' />
+                        <img src={logo} className='logo' alt=''/>
                     </a>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />

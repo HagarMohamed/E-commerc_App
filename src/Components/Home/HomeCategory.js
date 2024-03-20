@@ -7,7 +7,7 @@ import cloth from '../../Images/clothe.png'
 const HomeCategory = () => {
   return (
     <Container>
-        <SubTitle title="Categorey" btnTitle="More"/>
+        <SubTitle title="Categorey" btnTitle="More" pathText="/allcategory"/>
         <Row className='d-flex my-2'>
         <CategoryCard title="House Machines" img={cloth} background="#FADBA4"/>
         <CategoryCard title="House Machines" img={cloth} background="#FADBA4"/>
