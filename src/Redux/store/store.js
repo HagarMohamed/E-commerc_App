@@ -13,13 +13,14 @@ import {thunk} from 'redux-thunk';
 
  }
  const middleware = [thunk]
+  const store = configureStore({ reducer: rootRedusers}, applyMiddleware(thunk));
 
-const store = configureStore({
+// const store = configureStore({
    
-    reducer: rootRedusers, 
-    preloadedState: initialState, 
-    middleware: applyMiddleware(...middleware)
-})
+//     reducer: rootRedusers, 
+//     preloadedState: initialState, 
+//     middleware: applyMiddleware(...middleware)
+// })
 
-export default store;
+ export default store;
 
