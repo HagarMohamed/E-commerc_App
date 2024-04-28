@@ -1,9 +1,9 @@
 import { GET_ALL_CATEGORY, GET_ERORR } from "../type/type";
 
 const initial = {
-   cateory: [],
+   category: [],
    loading : true,
-   error: null,
+   error: []
 }
 
 const categoryReducer = (state = initial, action) => {
@@ -11,13 +11,14 @@ const categoryReducer = (state = initial, action) => {
         case GET_ALL_CATEGORY:
             return {
                 ...state,
-                cateory: action.payload,
+                category: action.payload,
                 loading: false,
                 error: null
             }
-            case GET_ERORR:
+        case GET_ERORR:
         return{
-            cateory: [],
+            ...state,
+            category: [],
             loading: false,
             error: action.payload,
         }
