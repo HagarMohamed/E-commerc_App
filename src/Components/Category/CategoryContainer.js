@@ -9,39 +9,39 @@ import getAllCategory from '../../Redux/actions/categoryAction';
 const CategoryContainer = () => {
 
   const dispatch = useDispatch();
-  const categoryData = useSelector(state => state.getAllCategory.cateory)
-  const loading = useSelector(state => state.getAllCategory.loading)
-  const error = useSelector(state => state.getAllCategory.error)
-  
+  const categoryData = useSelector(state => state.allcategory.category)
+  const loading = useSelector(state => state.allcategory.loading)
+  const error = useSelector(state => state.allcategory.error)
 
-const colors = ["#FADBA4", "#FADBA4", "#FADBA4", "#FADBA4", "#FADBA4", "#FADBA4"]
 
-useEffect(()=>{
- dispatch( getAllCategory())
-},[])
+  const colors = ["#FADBA4", "#FADBA4", "#FADBA4", "#FADBA4", "#FADBA4", "#FADBA4"]
+
+  useEffect(() => {
+    dispatch(getAllCategory())
+  }, [])
 
   return (
     <Container>
-        <div className='admin-content-text mt-2'>All Category</div>
-        <Row className='d-flex my-2 '>
-          
-         {
-          error === "Error"? (<h2>error</h2>):(
-          loading === false ? ( 
-          categoryData.data ? (
-            categoryData.data.slice(0, 5).map((item, index) => {
+      <div className='admin-content-text mt-2'>All Category</div>
+      <Row className='d-flex my-2 '>
 
-              return (<CategoryCard title={item.name} img={item.imge} background={colors[index]}/>)
-            })
+        {
+          loading === false ?
+            // error ? (<h2>error</h2>) : (
+              categoryData.data ? (
+                categoryData.data.slice(0, 5).map((item, index) => {
+
+                  return (<CategoryCard title={item.name} img={item.imge} background={colors[index]} />)
+                })
 
 
-          ): <h2>not found</h2>
-          )
-            : <h2>loaaading</h2>
-          )
-          }
-        </Row>
-      
+              ) : <h2>not found</h2>
+            // )
+            : (<h2>loaaading</h2>
+            )
+        }
+      </Row>
+
     </Container>
   )
 }
