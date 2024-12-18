@@ -480,7 +480,7 @@ body {
   font-size: 16px;
   letter-spacing: 0;
   line-height: 20px;
-  text-align: right;
+  /* text-align: right; */
 }
 .input-form {
   height: 37px;
@@ -631,3 +631,9 @@ body {
   margin-left: 5px;
 }
 /* end filter */
+
+#upload-photo{
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+}

@@ -1,23 +1,26 @@
 import React from 'react'
-import { Container, Row } from 'react-bootstrap'
-import Brand1 from '../../Images/brand1.png'
-import Brand2 from '../../Images/brand2.png'
-import Brand3 from '../../Images/brand3.png'
+import { Container, Row, Spinner } from 'react-bootstrap'
 import BrandCard from './BrandCard'
+import Pagination from '../Utilties/Pagination'
 
-const BrandContainer = () => {
+const BrandContainer = ({ brands, loading }) => {
+
   return (
     <Container>
-        <div className='admin-content-text mt-2'>All Brand</div>
-        <Row className='d-flex my-2'>
-        <BrandCard  img={Brand1} />
-        <BrandCard  img={Brand2} />
-        <BrandCard  img={Brand3} />
-        <BrandCard  img={Brand1} />
-        <BrandCard  img={Brand2} />
-        <BrandCard  img={Brand3} />
-        </Row>
-      
+      <div className='admin-content-text mt-2'>All Brand</div>
+
+      <Row className='d-flex my-2'>
+
+        {loading ? (<Spinner></Spinner>) :
+          (
+            brands.length > 0 ? brands.map((item) => {
+              return (
+                <BrandCard img={item.image} />
+              )
+            }) : <h3>not found</h3>
+          )
+        }
+      </Row>
     </Container>
   )
 }
