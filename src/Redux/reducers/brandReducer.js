@@ -1,4 +1,4 @@
-import { GET_ALL_BRAND, GET_ERORR } from "../type/type";
+import { GET_ALL_BRAND, GET_ALL_BRAND_PAGE, GET_ERORR } from "../type/type";
 
 const initial = {
    brands: [],
@@ -15,6 +15,13 @@ const brandReducer = (state = initial, action) => {
                 loading: false,
                 error: null
             }
+            case GET_ALL_BRAND_PAGE:
+                return {
+                    ...state,
+                    brands: action.payload,
+                    loading: false,
+                    error: null
+                }
         case GET_ERORR:
         return{
             ...state,

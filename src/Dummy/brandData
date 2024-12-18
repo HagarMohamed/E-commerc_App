@@ -1,0 +1,11 @@
+export const brandData = [
+    {id: 11, name: "brand1", slug: "mark-7", image: "url1", createdAt: "2022-01-28", updatedAt: "2022-01-28"},
+
+    {id: 12, name: "brand2", slug: "mark-8", image: "url2", createdAt: "2022-01-29", updatedAt: "2022-01-29"},
+
+    {id: 13, name: "brand3", slug: "mark-9", image: "url3", createdAt: "2022-01-29", updatedAt: "2022-01-29"},
+
+    {id: 14, name: "brand4", slug: "mark-10", image: "url4", createdAt: "2022-01-30", updatedAt: "2022-01-30"},
+
+    {id: 15, name: "brand5", slug: "mark-11", image: "url5", createdAt: "2022-01-31", updatedAt: "2022-01-31"}
+]
